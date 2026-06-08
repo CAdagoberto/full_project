@@ -1,0 +1,22 @@
+{
+  "name": "clinica_web-main",
+  "version": "1.0.0",
+  "description": "Abra a pasta **`telas_web`** no Live Server (ou servidor estático). A entrada do app é:",
+  "main": "index.js",
+  "scripts": {
+    "start": "node data/server.js",
+    "setup-db": "node data/setup-db.js",
+    "setup-db:sync": "node data/setup-db.js --sync",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.5"
+  }
+}
