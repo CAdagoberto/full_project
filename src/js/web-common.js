@@ -95,7 +95,15 @@ const WebApp = {
     });
   },
 
+  aplicarMarcaClinica() {
+    if (typeof ClinicaConfig !== 'undefined') {
+      ClinicaConfig.aplicarMarca();
+    }
+  },
+
   async initPagina({ tipos = null, navAtivo = '', ui = true } = {}) {
+    this.aplicarMarcaClinica();
+
     if (ui) {
       document.body.classList.add('ui-page-enter');
       await this.carregarUi();

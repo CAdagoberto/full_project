@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Clínica Psiquiátrica</title>
+    <title>Login - Clínica Horizonte</title>
     <link rel="stylesheet" href="src/css/login.css">
     <link rel="stylesheet" href="src/css/shared/animations.css">
 </head>
 <body>
 
     <div class="login-container">
-        <div class="logo-avatar">CP</div>
+        <div class="logo-avatar">CH</div>
 
         <div class="header-text">
             <h2 id="saudacao">Bem-vindo(a)!</h2>
-            <h1>CLÍNICA PSIQUIÁTRICA</h1>
+            <h1>CLÍNICA HORIZONTE</h1>
+            <p class="clinica-razao-social" data-clinica-razao>Centro Integrado de Saúde Mental Horizonte Ltda.</p>
         </div>
 
         <div id="tela-login">
@@ -69,7 +70,10 @@
         </div>
     </div>
 
-<script>
+    <script src="src/js/clinica-config.js"></script>
+    <script>
+        ClinicaConfig.aplicarMarca();
+
         // Lógica de Alternância entre as telas de Login e Cadastro
         document.getElementById('btn-primeiro-acesso').addEventListener('click', (e) => {
             e.preventDefault();

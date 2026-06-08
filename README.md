@@ -1,4 +1,6 @@
-# Clínica Psiquiátrica — Telas Web
+# Clínica Horizonte — Telas Web
+
+Sistema de gestão do **Centro Integrado de Saúde Mental Horizonte Ltda. — Clínica Horizonte**.
 
 ## Como iniciar
 
